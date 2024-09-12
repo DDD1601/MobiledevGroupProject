@@ -24,15 +24,29 @@ public class homeFragment extends Fragment {
         recyclerView = view.findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
-        // Sample data
-        categoryList = new ArrayList<>();
-        List<Book> books = new ArrayList<>();
-        books.add(new Book(R.drawable.book2, "Last Hope", "Author: Tony Faggioli"));
-        // Add more books to the list
+        // Science Fiction Books
+        List<Book> scienceFictionBooks = new ArrayList<>();
+        scienceFictionBooks.add(new Book(R.drawable.book3, "The Space Between Worlds", "Micaiah Johnson"));
+        scienceFictionBooks.add(new Book(R.drawable.book4, "Shards of Earth", "Adrian Tchaikovsky"));
+        scienceFictionBooks.add(new Book(R.drawable.book5, "The Second Rebel", "Linden A. Lewis"));
 
-        categoryList.add(new Category("Science Fiction", books));
-        categoryList.add(new Category("Novels and Literature", books));
-        categoryList.add(new Category("Health, Mind and Body", books));
+        // Novels and Literature Books
+        List<Book> novelsAndLiteratureBooks = new ArrayList<>();
+        novelsAndLiteratureBooks.add(new Book(R.drawable.book6, "Spice and Wolf Vol. 20", "Isuna Hasekura"));
+        novelsAndLiteratureBooks.add(new Book(R.drawable.book7, "That Time I Got Reincarnated as a Slime Vol. 11", "Fuse"));
+        novelsAndLiteratureBooks.add(new Book(R.drawable.book8, "Pocket Universe", "Author Name"));
+
+        // Health, Mind and Body Books
+        List<Book> healthMindBodyBooks = new ArrayList<>();
+        healthMindBodyBooks.add(new Book(R.drawable.book9, "Reprogram Your Mind", "Dr. Suresh Choudhary"));
+        healthMindBodyBooks.add(new Book(R.drawable.book10, "The Power of the Mind", "Samuel Yeboah-Boafo"));
+        healthMindBodyBooks.add(new Book(R.drawable.book11, "Power of the Mind", "Anuj Sayal"));
+
+        // Categories
+        categoryList = new ArrayList<>();
+        categoryList.add(new Category("Science Fiction", scienceFictionBooks));
+        categoryList.add(new Category("Novels and Literature", novelsAndLiteratureBooks));
+        categoryList.add(new Category("Health, Mind and Body", healthMindBodyBooks));
 
         categoryAdapter = new CategoryAdapter(categoryList);
         recyclerView.setAdapter(categoryAdapter);
