@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'vn.edu.usth.groupproject'
+    namespace 'com.example.tablayoutbottomnavagation'
     compileSdk 34
 
     defaultConfig {
-        applicationId "vn.edu.usth.groupproject"
+        applicationId "com.example.tablayoutbottomnavagation"
         minSdk 34
         targetSdk 34
         versionCode 1
@@ -37,4 +37,5 @@ dependencies {
     testImplementation libs.junit
     androidTestImplementation libs.ext.junit
     androidTestImplementation libs.espresso.core
+    implementation 'com.google.android.material:material:1.2.1'
 }
