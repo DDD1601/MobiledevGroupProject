@@ -32,8 +32,8 @@ public class homeFragment extends Fragment {
 
         // Novels and Literature Books
         List<Book> novelsAndLiteratureBooks = new ArrayList<>();
-        novelsAndLiteratureBooks.add(new Book(R.drawable.book6, "Spice and Wolf Vol. 20", "Isuna Hasekura"));
-        novelsAndLiteratureBooks.add(new Book(R.drawable.book7, "That Time I Got Reincarnated as a Slime Vol. 11", "Fuse"));
+        novelsAndLiteratureBooks.add(new Book(R.drawable.book6, "Spice and Wolf ", "Isuna Hasekura"));
+        novelsAndLiteratureBooks.add(new Book(R.drawable.book7, "That Time I Got Reincarnated as a Slime ", "Fuse"));
         novelsAndLiteratureBooks.add(new Book(R.drawable.book8, "Pocket Universe", "Author Name"));
 
         // Health, Mind and Body Books

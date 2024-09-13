@@ -50,7 +50,7 @@
             android:id="@+id/bookTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Last Hope"
+            android:text="Shards of Earth"
             android:textStyle="bold"
             android:textSize="18sp" />
 
@@ -58,7 +58,7 @@
             android:id="@+id/bookAuthor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Author: Tony Faggioli"
+            android:text="Author: Adrian Tchaikovsky"
             android:textSize="14sp" />
     </LinearLayout>
 
@@ -78,7 +78,7 @@
             android:id="@+id/bookTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="The Space Between Worlds"
+            android:text="The Second Rebel"
             android:textStyle="bold"
             android:textSize="18sp" />
 
@@ -86,7 +86,7 @@
             android:id="@+id/bookAuthor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Author: Micaiah Johnson"
+            android:text="Author: Linden A. Lewis"
             android:textSize="14sp" />
     </LinearLayout>
 
@@ -106,7 +106,7 @@
             android:id="@+id/bookTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="The Space Between Worlds"
+            android:text="Spice and Wolf"
             android:textStyle="bold"
             android:textSize="18sp" />
 
@@ -114,7 +114,7 @@
             android:id="@+id/bookAuthor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Author: Micaiah Johnson"
+            android:text="Author: Isuna Hasekura"
             android:textSize="14sp" />
     </LinearLayout>
 
@@ -134,7 +134,7 @@
             android:id="@+id/bookTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="The Space Between Worlds"
+            android:text="That Time I Got Reincarnated as a Slime"
             android:textStyle="bold"
             android:textSize="18sp" />
 
@@ -142,7 +142,7 @@
             android:id="@+id/bookAuthor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Author: Micaiah Johnson"
+            android:text="Author: Fuse"
             android:textSize="14sp" />
     </LinearLayout>
 
@@ -162,7 +162,7 @@
             android:id="@+id/bookTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="The Space Between Worlds"
+            android:text="Monogatary"
             android:textStyle="bold"
             android:textSize="18sp" />
 
@@ -170,7 +170,7 @@
             android:id="@+id/bookAuthor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Author: Micaiah Johnson"
+            android:text="Author: Nishioishin"
             android:textSize="14sp" />
     </LinearLayout>
 
@@ -190,7 +190,7 @@
             android:id="@+id/bookTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="The Space Between Worlds"
+            android:text="Reprogram Your Mind"
             android:textStyle="bold"
             android:textSize="18sp" />
 
@@ -198,7 +198,7 @@
             android:id="@+id/bookAuthor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Author: Micaiah Johnson"
+            android:text="Author: Dr. Suresh Choudhary"
             android:textSize="14sp" />
     </LinearLayout>
 
@@ -218,7 +218,7 @@
             android:id="@+id/bookTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="The Space Between Worlds"
+            android:text="The Power of the Mind"
             android:textStyle="bold"
             android:textSize="18sp" />
 
@@ -226,7 +226,7 @@
             android:id="@+id/bookAuthor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Author: Micaiah Johnson"
+            android:text="Author: Samuel Yeboah-Boafo"
             android:textSize="14sp" />
     </LinearLayout>
 
