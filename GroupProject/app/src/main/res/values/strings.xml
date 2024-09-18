@@ -6,4 +6,6 @@
     <string name="app_account">account</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sample_text">Sample Text</string>
+    <string name="read_more"><![CDATA[read_more ->]]></string>
 </resources>

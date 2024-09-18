@@ -1,13 +1,165 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
     tools:context=".homeFragment">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-</FrameLayout>
+        <include
+            android:id="@+id/category_1"
+            layout="@layout/reuse_layout_category" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <include
+                    android:id="@+id/category_1_item_1"
+                    layout="@layout/reuse_layout_item" />
+
+                <include
+                    android:id="@+id/category_1_item_2"
+                    layout="@layout/reuse_layout_item" />
+
+                <include
+                    android:id="@+id/category_1_item_3"
+                    layout="@layout/reuse_layout_item" />
+
+                <include
+                    android:id="@+id/category_1_item_4"
+                    layout="@layout/reuse_layout_item" />
+
+                <include
+                    android:id="@+id/category_1_item_5"
+                    layout="@layout/reuse_layout_item" />
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+
+        <include
+            android:id="@+id/category_2"
+            layout="@layout/reuse_layout_category" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <include
+                    android:id="@+id/category_2_item_1"
+                    layout="@layout/reuse_layout_item" />
+
+                <include
+                    android:id="@+id/category_2_item_2"
+                    layout="@layout/reuse_layout_item" />
+
+                <include
+                    android:id="@+id/category_2_item_3"
+                    layout="@layout/reuse_layout_item" />
+
+                <include
+                    android:id="@+id/category_2_item_4"
+                    layout="@layout/reuse_layout_item" />
+
+                <include
+                    android:id="@+id/category_2_item_5"
+                    layout="@layout/reuse_layout_item" />
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+
+        <include
+            android:id="@+id/category_3"
+            layout="@layout/reuse_layout_category" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <include
+                    android:id="@+id/category_3_item_1"
+                    layout="@layout/reuse_layout_item" />
+
+                <include
+                    android:id="@+id/category_3_item_2"
+                    layout="@layout/reuse_layout_item" />
+
+                <include
+                    android:id="@+id/category_3_item_3"
+                    layout="@layout/reuse_layout_item" />
+
+                <include
+                    android:id="@+id/category_3_item_4"
+                    layout="@layout/reuse_layout_item" />
+
+                <include
+                    android:id="@+id/category_3_item_5"
+                    layout="@layout/reuse_layout_item" />
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <include
+            android:id="@+id/category_4"
+            layout="@layout/reuse_layout_category" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <include
+                    android:id="@+id/category_4_item_1"
+                    layout="@layout/reuse_layout_item" />
+
+                <include
+                    android:id="@+id/category_4_item_2"
+                    layout="@layout/reuse_layout_item" />
+
+                <include
+                    android:id="@+id/category_4_item_3"
+                    layout="@layout/reuse_layout_item" />
+
+                <include
+                    android:id="@+id/category_4_item_4"
+                    layout="@layout/reuse_layout_item" />
+
+                <include
+                    android:id="@+id/category_4_item_5"
+                    layout="@layout/reuse_layout_item" />
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+</ScrollView>

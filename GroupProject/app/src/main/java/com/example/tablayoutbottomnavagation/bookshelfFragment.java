@@ -1,64 +1,46 @@
 package com.example.tablayoutbottomnavagation;
 
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link bookshelfFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class bookshelfFragment extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
-    public bookshelfFragment() {
-        // Required empty public constructor
-    }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment bookshelfFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static bookshelfFragment newInstance(String param1, String param2) {
-        bookshelfFragment fragment = new bookshelfFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
+    @Nullable
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_bookshelf, container, false);
+        View view = inflater.inflate(R.layout.fragment_bookshelf, container, false);
+
+        // Category 1 Items
+        setupItem(view, R.id.category_1_item_1, R.drawable.book1, "Book Title 1", "This is the description for Book 1");
+        setupItem(view, R.id.category_1_item_2, R.drawable.book2, "Book Title 2", "This is the description for Book 2");
+        setupItem(view, R.id.category_1_item_3, R.drawable.book1, "Book Title 3", "This is the description for Book 3");
+        setupItem(view, R.id.category_1_item_4, R.drawable.book2, "Book Title 4", "This is the description for Book 4");
+        setupItem(view, R.id.category_1_item_5, R.drawable.book1, "Book Title 5", "This is the description for Book 5");
+        setupItem(view, R.id.category_1_item_6, R.drawable.book1, "Book Title 6", "This is the description for Book 1");
+        setupItem(view, R.id.category_1_item_7, R.drawable.book2, "Book Title 7", "This is the description for Book 2");
+        setupItem(view, R.id.category_1_item_8, R.drawable.book1, "Book Title 8", "This is the description for Book 3");
+        setupItem(view, R.id.category_1_item_9, R.drawable.book2, "Book Title 9", "This is the description for Book 4");
+        setupItem(view, R.id.category_1_item_10, R.drawable.book1, "Book Title 10", "This is the description for Book 5");
+
+        return view;
+    }
+
+    private void setupItem(View view, int itemId, int imageResId, String title, String description) {
+        View item = view.findViewById(itemId);
+        ImageView itemImage = item.findViewById(R.id.reusableimage);
+        TextView itemTitle = item.findViewById(R.id.reusabletitle);
+        TextView itemDescription = item.findViewById(R.id.reusabledescription);
+
+        itemImage.setImageResource(imageResId);
+        itemTitle.setText(title);
+        itemDescription.setText(description);
     }
 }

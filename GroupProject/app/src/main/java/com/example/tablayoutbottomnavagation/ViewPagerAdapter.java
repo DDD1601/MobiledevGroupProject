@@ -1,6 +1,6 @@
 package com.example.tablayoutbottomnavagation;
 
-
+import com.example.tablayoutbottomnavagation.SearchFragment;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
@@ -22,7 +22,7 @@ public class ViewPagerAdapter extends FragmentStatePagerAdapter {
             case 0:
                 return new homeFragment();
             case 1:
-                return new searchFragment();
+                return new SearchFragment();
             case 2:
                 return new bookshelfFragment();
             case 3:

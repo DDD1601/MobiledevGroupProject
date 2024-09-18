@@ -1,14 +1,225 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".accountFragment">
+    tools:context=".accountFragment"
+    android:orientation="vertical">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="account" />
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:background="@color/purple_200">
 
-</FrameLayout>
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+
+
+            android:background="@color/white"
+            android:src="@drawable/account"/>
+
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/profile_image"
+
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="Name"/>
+
+        <TextView
+            android:id="@+id/user_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/profile_image"
+            android:layout_below="@+id/user_name"
+
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:text="Description"/>
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+
+                android:drawableLeft="@drawable/notifications_none"
+
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:text=" Notification" />
+
+            <TextView
+                android:id="@+id/summit_work"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+
+                android:drawableLeft="@drawable/add_box"
+
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:text=" Summit work" />
+
+
+            <TextView
+                android:id="@+id/your_work"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+
+                android:drawableLeft="@drawable/library_books"
+
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:text=" Your work" />
+
+
+            <TextView
+                android:id="@+id/following_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+
+                android:drawableLeft="@drawable/account_box"
+
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:text=" Folowing author" />
+
+
+            <TextView
+                android:id="@+id/following_artist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+
+                android:drawableLeft="@drawable/account_box"
+
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:text=" Folowing artist" />
+
+            <TextView
+                android:id="@+id/follower"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+
+                android:drawableLeft="@drawable/account_box"
+
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:text=" Folower" />
+
+            <TextView
+                android:id="@+id/history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+
+                android:drawableLeft="@drawable/menu_book"
+
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:text=" History" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+
+                android:drawableLeft="@drawable/info_outline"
+
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:text=" About this app" />
+
+            <TextView
+                android:id="@+id/helpandfeedback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+
+                android:drawableLeft="@drawable/help_outline"
+
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:text=" Help and Feedback" />
+
+            <TextView
+                android:id="@+id/setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+
+                android:drawableLeft="@drawable/settings"
+
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:text=" Setting" />
+
+            <TextView
+                android:id="@+id/mute_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+
+                android:drawableLeft="@drawable/cancel"
+
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:text=" Mute_setting" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
